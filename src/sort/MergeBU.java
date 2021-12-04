@@ -5,8 +5,6 @@
  **************************************************************************** */
 package sort;
 
-import edu.princeton.cs.algs4.StdOut;
-
 public class MergeBU extends Merge {
 
     public void sort(Comparable[] a) {

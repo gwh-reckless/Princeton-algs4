@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:              Ada Lovelace
- *  Coursera User ID:  123456
- *  Last modified:     October 16, 1842
- **************************************************************************** */
-
 package sort;
 
 import edu.princeton.cs.algs4.StdDraw;
@@ -56,11 +50,9 @@ public class ShellAnimation extends SortingTemplate {
             boolean sorting = (i_ - i) >= 0 && (i_ - i) % h == 0 ? true : false;
             if (i == j_) {
                 StdDraw.setPenColor(StdDraw.RED);
-            }
-            else if (sorting) {
+            } else if (sorting) {
                 StdDraw.setPenColor(StdDraw.BLACK);
-            }
-            else {
+            } else {
                 StdDraw.setPenColor(StdDraw.GRAY);
             }
 

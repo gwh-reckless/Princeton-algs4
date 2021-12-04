@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:              Ada Lovelace
- *  Coursera User ID:  123456
- *  Last modified:     October 16, 1842
- **************************************************************************** */
-
 package sort;
 
 import edu.princeton.cs.algs4.StdDraw;
@@ -48,14 +42,11 @@ public class MergeAnimation extends Merge {
             double rh = (double) a[i] / (max * 2);
             if (i == mid) {
                 StdDraw.setPenColor(StdDraw.BLUE);
-            }
-            else if (i >= lo && i <= hi) {
+            } else if (i >= lo && i <= hi) {
                 StdDraw.setPenColor(StdDraw.BLACK);
-            }
-            else if (i < lo) {
+            } else if (i < lo) {
                 StdDraw.setPenColor(StdDraw.MAGENTA);
-            }
-            else {
+            } else {
                 StdDraw.setPenColor(StdDraw.GRAY);
             }
 

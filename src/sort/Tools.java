@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:              Ada Lovelace
- *  Coursera User ID:  123456
- *  Last modified:     October 16, 1842
- **************************************************************************** */
-
 package sort;
 
 import edu.princeton.cs.algs4.Out;
@@ -19,11 +13,11 @@ public class Tools {
         out.close();
     }
 
-    public static void generateRandomNums10(){
+    public static void generateRandomNums10() {
         Out out = new Out("txt/random-10.txt");
-        double[] a = new double[]{1,2,3,4,5,6,7,8,9,10};
+        double[] a = new double[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         StdRandom.shuffle(a);
-        for(int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++) {
             out.print(a[i] + " ");
         }
         out.close();
@@ -32,9 +26,9 @@ public class Tools {
 
 
     public static void main(String[] args) {
-        if(args[0].equals("random")){
+        if (args[0].equals("random")) {
             generateRandomNums(Integer.parseInt(args[1]));
-        } else if (args[0].equals("random10")){
+        } else if (args[0].equals("random10")) {
             StdOut.println("output");
             generateRandomNums10();
         }

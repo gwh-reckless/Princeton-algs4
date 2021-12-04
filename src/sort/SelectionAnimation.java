@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:              Ada Lovelace
- *  Coursera User ID:  123456
- *  Last modified:     October 16, 1842
- **************************************************************************** */
-
 package sort;
 
 import edu.princeton.cs.algs4.StdDraw;
@@ -47,11 +41,9 @@ public class SelectionAnimation extends SortingTemplate {
             double rh = (double) a[i] / (max * 2);
             if (i < start) {
                 StdDraw.setPenColor(StdDraw.GRAY);
-            }
-            else if (i == min) {
+            } else if (i == min) {
                 StdDraw.setPenColor(StdDraw.RED);
-            }
-            else {
+            } else {
                 StdDraw.setPenColor(StdDraw.BLACK);
             }
             StdDraw.filledRectangle(x, y, rw, rh);

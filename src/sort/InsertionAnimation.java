@@ -1,9 +1,3 @@
-/* *****************************************************************************
- *  Name:              Ada Lovelace
- *  Coursera User ID:  123456
- *  Last modified:     October 16, 1842
- **************************************************************************** */
-
 package sort;
 
 import edu.princeton.cs.algs4.StdDraw;
@@ -51,11 +45,9 @@ public class InsertionAnimation extends SortingTemplate {
 
             if (i <= start && i > end) {
                 StdDraw.setPenColor(StdDraw.BLACK);
-            }
-            else if (i == end) {
+            } else if (i == end) {
                 StdDraw.setPenColor(StdDraw.RED);
-            }
-            else {
+            } else {
                 StdDraw.setPenColor(StdDraw.GRAY);
             }
             StdDraw.filledRectangle(x, y, rw, rh);
